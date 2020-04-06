@@ -35,11 +35,5 @@ export const pageQuery = graphql`
         title
       }
     }
-    wordpressWpUsers(id: { eq: $id }) {
-      name
-      authored_wordpress__POST {
-        ...PostListFields
-      }
-    }
   }
 `

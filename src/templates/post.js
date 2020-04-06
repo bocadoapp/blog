@@ -114,10 +114,7 @@ export const pageQuery = graphql`
         name
         slug
       }
-      author {
-        name
-        slug
-      }
+      author
     }
   }
 `
