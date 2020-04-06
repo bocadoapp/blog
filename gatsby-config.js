@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/bocado-blog",
   siteMetadata: {
     title: 'Gatsby + WordPress Starter',
   },
