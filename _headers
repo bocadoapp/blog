@@ -23,95 +23,95 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---src-pages-404-js-6035e7a47c109103c959.js
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-198fab4b965a6a69c4e6.js
+/webpack-runtime-ca41fbd67b85ce31aca0.js
   Cache-Control: public, max-age=31536000, immutable
-/app-ce26d1fd42e349c0829c.js
+/app-863ec9aeb02be489fe09.js
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable
 /sw.js
   Cache-Control: no-cache
-/bocado-blog/blog/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
-/bocado-blog/blog-2/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
-/bocado-blog/contact/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
-/bocado-blog/about/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
-/bocado-blog/example-post-3/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-post-js-1ff1bfae12dbfe7ced3b.js>; rel=preload; as=script
-/bocado-blog/example-post-2/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-post-js-1ff1bfae12dbfe7ced3b.js>; rel=preload; as=script
-/bocado-blog/example-post/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-post-js-1ff1bfae12dbfe7ced3b.js>; rel=preload; as=script
-/bocado-blog/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-blog-js-f9c77d99b43e5a10c521.js>; rel=preload; as=script
-/bocado-blog/categories/uncategorized/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-category-js-48885702d77e65b65c70.js>; rel=preload; as=script
-/bocado-blog/tags/test/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-templates-tag-js-e6626b2ccffab04902e9.js>; rel=preload; as=script
-/bocado-blog/404/
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-pages-404-js-6035e7a47c109103c959.js>; rel=preload; as=script
-/bocado-blog/404.html
-  Link: </bocado-blog/webpack-runtime-198fab4b965a6a69c4e6.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/app-ce26d1fd42e349c0829c.js>; rel=preload; as=script
-  Link: </bocado-blog/styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
-  Link: </bocado-blog/commons-e275be290b6576b370c5.js>; rel=preload; as=script
-  Link: </bocado-blog/component---src-pages-404-js-6035e7a47c109103c959.js>; rel=preload; as=script
+/blog/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
+/blog-2/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
+/contact/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
+/about/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-page-js-478ac7811812817aceb9.js>; rel=preload; as=script
+/example-post-3/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-js-1ff1bfae12dbfe7ced3b.js>; rel=preload; as=script
+/example-post-2/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-js-1ff1bfae12dbfe7ced3b.js>; rel=preload; as=script
+/example-post/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-js-1ff1bfae12dbfe7ced3b.js>; rel=preload; as=script
+/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-blog-js-f9c77d99b43e5a10c521.js>; rel=preload; as=script
+/categories/uncategorized/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-category-js-48885702d77e65b65c70.js>; rel=preload; as=script
+/tags/test/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-templates-tag-js-e6626b2ccffab04902e9.js>; rel=preload; as=script
+/404/
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-pages-404-js-6035e7a47c109103c959.js>; rel=preload; as=script
+/404.html
+  Link: </webpack-runtime-ca41fbd67b85ce31aca0.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </app-863ec9aeb02be489fe09.js>; rel=preload; as=script
+  Link: </styles-640cb01c5d0cf6e2b049.js>; rel=preload; as=script
+  Link: </commons-e275be290b6576b370c5.js>; rel=preload; as=script
+  Link: </component---src-pages-404-js-6035e7a47c109103c959.js>; rel=preload; as=script
