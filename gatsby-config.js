@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/bocado-blog",
+  pathPrefix: "/",
   siteMetadata: {
     title: 'Gatsby + WordPress Starter',
   },
