@@ -1,0 +1,35 @@
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+body {
+  font-family: 'Comfortaa', cursive;  
+}
+
+h1, h2, h3, h4, h5 {
+}
+
+.menu a:not(:last-child) {
+  @apply mr-4;
+}
+
+button {
+  @apply text-white;
+  background: rgb(244,120,60);
+  background: linear-gradient(270deg, rgba(244,120,60,1) 0%, rgba(228,28,83,1) 100%);  
+}
+
+.title {
+  @apply text-2xl;
+  color: #e72c50;
+}
+
+.post-image {
+  @apply -m-16 mb-24 mt-12;
+}
+
+.post-image img {
+  max-height: 400px;
+} 

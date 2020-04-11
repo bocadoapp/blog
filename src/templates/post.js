@@ -2,60 +2,101 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
+import { motion } from 'framer-motion'
+
+const variants = {
+  enter: {
+    opacity: 1,
+    transition: { when: 'beforeChildren' }
+  },
+  exit: {
+    opacity: 0,
+  }
+}
+
+const h1Variants = {
+  enter: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.6, duration: 1 }
+  },
+  exit: {
+    opacity: 0,
+    y: 50
+  }
+}
+
+const contentVariants = {
+  enter: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 1 }
+  },
+  exit: {
+    opacity: 0,
+    y: 50
+  }
+}
+
+const imageVariants = {
+  enter: {
+    opacity: 1,
+    transition: { delay: 0 }
+  },
+  exit: {
+    opacity: 0
+  }
+}
 
 export const BlogPostTemplate = ({
   content,
   categories,
-  tags,
+  image,
   title,
   date,
   author,
 }) => {
   return (
-    <section className="section">
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <div dangerouslySetInnerHTML={{ __html: content }} />
-            <div style={{ marginTop: `4rem` }}>
-              <p>
-                {date} - posted by{' '}
-                <Link to={`/author/${author.slug}`}>{author.name}</Link>
-              </p>
-              {categories && categories.length ? (
-                <div>
-                  <h4>Categories</h4>
-                  <ul className="taglist">
-                    {categories.map(category => (
-                      <li key={`${category.slug}cat`}>
-                        <Link to={`/categories/${category.slug}/`}>
-                          {category.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-              {tags && tags.length ? (
-                <div>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={`${tag.slug}tag`}>
-                        <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className="flex justify-center items-center w-full py-3 px-6 md:px-32 lg:px-64">
+      <motion.div
+        variants={variants}
+        initial='exit'
+        animate='enter'
+        className='flex flex-col justify-center items-center'
+      >
+        <motion.div className='relative -mb-24' variants={{ enter: { opacity: 1 }, exit: { opacity: 0 }}}>
+          <motion.div variants={h1Variants} className='absolute bg-white flex flex-col justify-center items-center mb-8'>
+            {categories && categories.length ?
+              categories.map(category => (
+                <span key={`${category.slug}cat`} style={{ color: '#e72c50' }}>
+                  <Link to={`/categories/${category.slug}/`}>
+                    {category.name}
+                  </Link>
+                </span>
+              ))
+            : null}            
+            <h1
+              className="flex text-3xl text-center w-full md:max-w-md"
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
+            {}
+            <p className='text-gray-500 text-sm'>
+              <Link to={`/author/${author.slug}`}>{author.name}</Link>
+              {date}
+            </p>              
+          </motion.div>
+          {image ? (
+            <motion.div variants={imageVariants} className='post-image'>
+              <img src={image} />
+            </motion.div>
+          ) : null}
+        </motion.div>
+        <motion.div
+          variants={contentVariants}
+          className='mb-40 mt-12'
+          dangerouslySetInnerHTML={{ __html: content }} 
+        />
+      </motion.div>
     </section>
   )
 }
@@ -66,20 +107,13 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  const { wordpressPost: post } = data
+  const { wordpressPost: post } = data  
 
   return (
-    <Layout>
+    <>
       <Helmet title={`${post.title} | Blog`} />
-      <BlogPostTemplate
-        content={post.content}
-        categories={post.categories}
-        tags={post.tags}
-        title={post.title}
-        date={post.date}
-        author={post.author}
-      />
-    </Layout>
+      <BlogPostTemplate {...post} />
+    </>
   )
 }
 
@@ -110,11 +144,8 @@ export const pageQuery = graphql`
         name
         slug
       }
-      tags {
-        name
-        slug
-      }
       author
+      image: jetpack_featured_media_url
     }
   }
 `

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import Pagination from '../components/Pagination'
 
@@ -11,10 +10,10 @@ export default class IndexPage extends React.Component {
     const { allWordpressPost: { edges: posts } } = data
 
     return (
-      <Layout>
-        <PostList posts={posts} title="Latest posts" />
+      <>
+        <PostList posts={posts} />
         <Pagination pageContext={pageContext} pathPrefix="/" />
-      </Layout>
+      </>
     )
   }
 }

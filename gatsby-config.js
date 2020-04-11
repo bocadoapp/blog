@@ -1,3 +1,5 @@
+
+
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
@@ -5,17 +7,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-wordpress',
       options: {
-        // The base url to your WP site.
         baseUrl: 'bocadoblog.wordpress.com',
-        // WP.com sites set to true, WP.org set to false
         hostingWPCOM: true,
-        // The protocol. This can be http or https.
         protocol: 'https',
-        // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: false,
         auth: {
           wpcom_app_clientSecret: "dROADppsMM5OjPC8qB9xhJDVXfvbDgwvjbI2qDnjNVA4W3fNwpKDw6D4nACQX3uhReset",
@@ -23,22 +20,45 @@ module.exports = {
           wpcom_user: "manelet",
           wpcom_pass: "Wordpresscom123_!"
         },
-        // Set to true to debug endpoints on 'gatsby build'
-        verboseOutput: true
+        verboseOutput: true,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/tags"
+        ],        
       },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-netlify',
     {
-      // Removes unused css rules
-      resolve:'gatsby-plugin-purgecss',
+      resolve: "gatsby-plugin-postcss",
       options: {
-        // Activates purging in gatsby develop
-        develop: true,
-        // Purge only the main css file
-        purgeOnly: ['/all.sass'],
+        postCssPlugins: [
+          require(`tailwindcss`)(`./tailwind.js`),
+          ...(process.env.NODE_ENV === "production"
+            ? [require(`autoprefixer`), require(`cssnano`)]
+            : []),
+        ],
       },
-    }, // must be after other CSS plugins
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    },    
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+        purgeOnly: [`src/styles/main.css`],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Comfortaa`
+        ],
+        display: 'swap'
+      }   
+    } 
   ],
 }
