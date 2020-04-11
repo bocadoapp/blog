@@ -31,7 +31,7 @@ const TemplateWrapper = ({ children, location }) => (
     <div>
       <AnimatePresence exitBeforeEnter>
         <motion.div
-          key={`link-${location.pathname}`}
+          key={`link-${location ? location.pathname : 'ssr-key'}`}
           variants={variants}
           initial='initial'
           exit='exit'
