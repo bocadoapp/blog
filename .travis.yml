@@ -6,6 +6,6 @@ node_js:
 deploy:
   provider: script
   script: cd public/ && npm install && npm run deploy
-  skip_cleanup: true
+  cleanup: true
   on:
     branch: master
