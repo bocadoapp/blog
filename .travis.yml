@@ -5,7 +5,7 @@ node_js:
   - "10"
 deploy:
   provider: script
-  script: cd public/ && npm install && npm run deploy
-  cleanup: true
+  script: npm install && npm run deploy
+  skip_cleanup: true
   on:
     branch: master
