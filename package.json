@@ -39,7 +39,7 @@
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/bocadoapp/blog.git"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://a6ef229332bb5dd496746c529f7f8e8f7ab37fff@github.com/bocadoapp/blog.git"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.0.1",
