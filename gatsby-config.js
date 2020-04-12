@@ -55,7 +55,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Comfortaa`
+          `Comfortaa`,
+          'Open Sans\:300,400,600,800'
         ],
         display: 'swap'
       }   
@@ -65,6 +66,14 @@ module.exports = {
       options: {
         trackingId: "UA-163445361-1"
       }
-    },    
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images\/svg/
+        }
+      }
+    }        
   ],
 }
