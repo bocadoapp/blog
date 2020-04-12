@@ -74,13 +74,15 @@ const Navbar = () => {
               </Link>
             </div>          
             <div className="hidden md:flex md:flex-col w-full justify-end">
-              <div className='border border-gray-300 rounded-lg overflow-hidden text-xs flex'>
-                <input value={mail} className='p-3 w-full' type='email' name='EMAIL' placeholder='Tu e-mail' onChange={e => setMail(e.target.value)} />
-                <button className='p-3 rounded-l-lg w-full flex justify-center' disabled={loading} onClick={handleOnSubmit}>
-                  {btnMsg}
-                </button>
+              <div className='w-full max-w-xs self-end'>
+                <div className='border border-gray-300 rounded-lg overflow-hidden text-xs flex'>
+                  <input value={mail} className='p-3 w-full' type='email' name='EMAIL' placeholder='Tu e-mail' onChange={e => setMail(e.target.value)} />
+                  <button className='p-3 rounded-l-lg w-full flex justify-center' disabled={loading} onClick={handleOnSubmit}>
+                    {btnMsg}
+                  </button>
+                </div>
+                <p className='text-xs text-gray-400 text-right mt-2'>Sin spam, ni nada raro, prometido 🙏</p>
               </div>
-              <p className='text-xs text-gray-400 text-right mt-2'>Sin spam, ni nada raro, prometido 🙏</p>
             </div>
         </nav>
       )}

@@ -56,7 +56,8 @@ module.exports = {
       options: {
         fonts: [
           `Comfortaa`,
-          'Open Sans\:300,400,600,800'
+          'Open Sans\:300,400,600,800',
+          'Nanum Gothic Coding\:400,700'
         ],
         display: 'swap'
       }   

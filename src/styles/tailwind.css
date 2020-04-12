@@ -29,11 +29,11 @@ button {
 }
 
 .post-image {
-  @apply -m-16 mb-24 mt-12;
+  @apply mt-8;
 }
 
 .post-image img {
-  max-height: 400px;
+  max-width: 100%;
 } 
 
 .menu-link {
@@ -44,4 +44,69 @@ button {
   color: white;
   background: rgb(244,120,60);
   background: linear-gradient(270deg, rgba(244,120,60,1) 0%, rgba(228,28,83,1) 100%);    
+}
+
+.post-content {
+  @apply flex flex-col mb-40 mt-12;
+}
+
+.post-content p {
+  @apply my-5;
+}
+
+.post-content h2, .post-content h3 {
+  @apply text-xl font-bold my-3;
+  color: #e72c50;
+}
+
+.post-content ul {
+  @apply list-disc ml-4 pl-4;
+}
+
+.post-content a {
+  @apply relative;
+}
+
+.post-content a:after {
+  content: '';
+  background: rgb(244,120,60);
+  background: linear-gradient(270deg, rgba(244,120,60,1) 0%, rgba(228,28,83,1) 100%);
+  bottom: 0px;
+  opacity: .3;
+  height: 8px;
+  @apply p-1 absolute w-full left-0;
+}
+
+.post-content ul li {
+}
+
+.post-content pre {
+  @apply bg-gray-700 p-5 rounded my-5 font-normal text-xs relative text-white max-w-full;
+  font-family: 'Nanum Gothic Coding', monospace;
+  white-space: pre-wrap;
+}
+
+.post-content pre:after {
+  bottom: 0;
+}
+
+.post-content figure {
+  @apply my-4;
+}
+
+@screen md {
+  .post-content pre {
+    @apply -mx-10;
+    font-family: 'Nanum Gothic Coding', monospace;
+  }
+  
+  .post-content {
+    @apply max-w-xl;
+  }
+}
+
+@screen lg {
+  .post-content {
+    @apply max-w-2xl;
+  }
 }

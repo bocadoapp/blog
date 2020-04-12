@@ -64,8 +64,8 @@ export const BlogPostTemplate = ({
         animate='enter'
         className='flex flex-col justify-center items-center'
       >
-        <motion.div className='relative -mb-24' variants={{ enter: { opacity: 1 }, exit: { opacity: 0 }}}>
-          <motion.div variants={h1Variants} className='absolute bg-white flex flex-col justify-center items-center mb-8 p-4'>
+        <motion.div className='w-full flex flex-col md:flex-row justify-center relative' variants={{ enter: { opacity: 1 }, exit: { opacity: 0 }}}>
+          <motion.div variants={h1Variants} className='relative md:absolute bg-white flex flex-col justify-center items-center mb-8 p-4'>
             {categories && categories.length ?
               categories.map(category => (
                 <span key={`${category.slug}cat`} style={{ color: '#e72c50' }}>
@@ -93,7 +93,7 @@ export const BlogPostTemplate = ({
         </motion.div>
         <motion.div
           variants={contentVariants}
-          className='mb-40 mt-12'
+          className='post-content'
           dangerouslySetInnerHTML={{ __html: content }} 
         />
       </motion.div>
