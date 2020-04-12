@@ -28,7 +28,7 @@ export default class IndexPage extends React.Component {
         <div className="container">
           { title ? (
             <div>
-              <h1 className="has-text-weight-bold is-size-2">{title}</h1>
+              <h1 className="title text-center my-4 has-text-weight-bold is-size-2">{title}</h1>
             </div>
           ) : null}
           <motion.div variants={container} initial='exit' animate='enter'>

@@ -38,10 +38,11 @@ const Navbar = () => {
     <StaticQuery
       query={graphql`
         query {
-          allWordpressPage(sort: { fields: wordpress_id }, limit: 5) {
+          allWordpressCategory(filter: { count: { gt: 0 } }) {
             edges {
               node {
-                title
+                id
+                name
                 slug
               }
             }
@@ -51,15 +52,19 @@ const Navbar = () => {
       render={data => (
         <nav className='flex flex-row-reverse md:flex-row justify-start items-center w-full py-3 px-6 md:px-20 lg:px-32 mb-10 md:mb-14'>
             <div className="menu flex w-full justify-end md:justify-start">
-              {data.allWordpressPage.edges.map(edge =>
+              {data.allWordpressCategory.edges.map(edge =>
               (
                 <Link
-                  to={`/${edge.node.slug}`}
+                  to={`/categories/${edge.node.slug}`}
                   key={edge.node.slug}
+                  className='menu-link'
                 >
-                  {edge.node.title}
+                  {edge.node.name}
                 </Link>
               ))}
+              <Link className='menu-link' to='/quienes-somos'>
+                Nosotros
+              </Link>              
             </div>
             <div className="flex ml-auto mr-auto w-full justify-center">
               <Link to="/" >
