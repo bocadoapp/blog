@@ -65,7 +65,7 @@ export const BlogPostTemplate = ({
         className='flex flex-col justify-center items-center'
       >
         <motion.div className='relative -mb-24' variants={{ enter: { opacity: 1 }, exit: { opacity: 0 }}}>
-          <motion.div variants={h1Variants} className='absolute bg-white flex flex-col justify-center items-center mb-8'>
+          <motion.div variants={h1Variants} className='absolute bg-white flex flex-col justify-center items-center mb-8 p-4'>
             {categories && categories.length ?
               categories.map(category => (
                 <span key={`${category.slug}cat`} style={{ color: '#e72c50' }}>
