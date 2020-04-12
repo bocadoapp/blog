@@ -43,13 +43,7 @@
   Link: </commons-5893c330904dab28293d.js>; rel=preload; as=script
   Link: </app-c9af90ce08e27c8f0b11.js>; rel=preload; as=script
   Link: </component---src-templates-page-js-a169535757bafae4378d.js>; rel=preload; as=script
-/crear-bajo-un-confinamiento/
-  Link: </webpack-runtime-48722021df5bb334d7e0.js>; rel=preload; as=script
-  Link: </styles-1fe19e63cabb2fc20745.js>; rel=preload; as=script
-  Link: </commons-5893c330904dab28293d.js>; rel=preload; as=script
-  Link: </app-c9af90ce08e27c8f0b11.js>; rel=preload; as=script
-  Link: </component---src-templates-post-js-a52361f9634ab84b4ac0.js>; rel=preload; as=script
-/example-post/
+/blog-hecho-en-react-wordpress/
   Link: </webpack-runtime-48722021df5bb334d7e0.js>; rel=preload; as=script
   Link: </styles-1fe19e63cabb2fc20745.js>; rel=preload; as=script
   Link: </commons-5893c330904dab28293d.js>; rel=preload; as=script
