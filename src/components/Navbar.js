@@ -50,8 +50,15 @@ const Navbar = () => {
         }
       `}
       render={data => (
-        <nav className='flex flex-row-reverse md:flex-row justify-start items-center w-full py-3 px-6 md:px-20 lg:px-32 mb-10 md:mb-14'>
-            <div className="menu flex w-full justify-end md:justify-start">
+        <nav className='flex md:flex-row justify-start items-center w-full py-3 px-6 md:px-20 lg:px-32 mb-10 md:mb-14'>
+            <div className="flex w-full justify-end md:justify-start">
+              <Link to="/" >
+                <figure>
+                  <img src={logo} alt="Bocado" style={{ maxWidth: '150px' }} />
+                </figure>
+              </Link>
+            </div>             
+            <div className="menu flex w-full justify-center ml-auto mr-auto">
               {data.allWordpressCategory.edges.map(edge =>
               (
                 <Link
@@ -65,15 +72,8 @@ const Navbar = () => {
               <Link className='menu-link' to='/quienes-somos'>
                 Nosotros
               </Link>              
-            </div>
-            <div className="flex ml-auto mr-auto w-full justify-center">
-              <Link to="/" >
-                <figure>
-                  <img src={logo} alt="Bocado" style={{ maxWidth: '150px' }} />
-                </figure>
-              </Link>
-            </div>          
-            <div className="hidden md:flex md:flex-col w-full justify-end">
+            </div>         
+            <div className="hidden md:flex md:flex-col w-full justify-end pt-4">
               <div className='w-full max-w-xs self-end'>
                 <div className='border border-gray-300 rounded-lg overflow-hidden text-xs flex'>
                   <input value={mail} className='p-3 w-full' type='email' name='EMAIL' placeholder='Tu e-mail' onChange={e => setMail(e.target.value)} />
